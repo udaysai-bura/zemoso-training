@@ -41,6 +41,7 @@ public class BusTravelSystem {
         System.out.print("Cities on the way:");
         printPath(parent, destination, cityNames);
         System.out.println("\nMinimum Travelling Distance = " + distance[destination]+"KM");
+        System.out.println("Happy Journey!");
     }
     private static void printPath(int[] parent, int city, String[] cityNames) {
         if (city == -1) return;
