@@ -48,6 +48,10 @@ public class BusTravelSystem {
         printPath(parent, parent[city], cityNames);
         System.out.print(cityNames[city] + " ");
     }
+    private static void addRoute(List<List<Edge>> graph, int src, int dest, int cost) {
+        graph.get(src).add(new Edge(dest, cost));
+        graph.get(dest).add(new Edge(src, cost));
+    }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String[] cityNames = {
@@ -79,8 +83,5 @@ public class BusTravelSystem {
         int destination = sc.nextInt();
         dijkstra(graph, source, destination, cityNames);
     }
-    private static void addRoute(List<List<Edge>> graph, int src, int dest, int cost) {
-        graph.get(src).add(new Edge(dest, cost));
-        graph.get(dest).add(new Edge(src, cost));
-    }
+    
 }
