@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Local & Session Storage </title>
+    <style>
+        body {
+            padding: 40px;
+            background-color: antiquewhite;
+        }
+        .box {
+            margin-bottom: 20px;
+        }
+        button {
+            padding: 8px 15px;
+            margin-top: 10px;
+            background-color: aqua;
+        }
+        button:hover{
+            background-color:lightcoral;
+        }
+        button:active{
+            color: brown;
+            background-color: cadetblue;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Storage Assignment</h2>
+    <div class="box">
+        <h3>Local Score: <span id="localScore">0</span></h3>
+        <button onclick="incrementLocal()">Increment Local Score</button>
+    </div>
+    <div class="box">
+        <h3>Session Score: <span id="sessionScore">0</span></h3>
+        <button onclick="incrementSession()">Increment Session Score</button>
+    </div>
+    <script src="storage_script.js"></script>
+</body>
+</html>
