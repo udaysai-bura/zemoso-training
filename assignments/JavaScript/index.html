@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Zemoso Restaurant</title>
+</head>
+<body>
+  <h1>Restaurant Billing System</h1>
+  <div class="app">
+    <div class="tables">
+      <h2>Tables</h2>
+      <input type="text" id="tableSearch" placeholder="Search tables...">
+      <div id="tablesList"></div>
+    </div>
+    <div class="menu">
+      <h2>Menu</h2>
+      <div class="menu-controls">
+        <input type="text" id="menuSearch" placeholder="Search menu items...">
+        <select id="categoryFilter">
+          <option value="">All Categories</option>
+          <option value="appetizer">Appetizers</option>
+          <option value="main">Main Course</option>
+          <option value="dessert">Desserts</option>
+          <option value="beverage">Beverages</option>
+        </select>
+      </div>
+      <div id="menuList"></div>
+    </div>
+  </div>
+
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <h3 id="modalTitle">Order Details</h3>
+      <div id="orderDetails"></div>
+      <div class="modal-actions">
+        <button class="btn btn-close" id="closeModal">Close</button>
+        <button class="btn btn-session" id="closeSession">Generate Bill</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
