@@ -1,0 +1,8 @@
+.Likes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+    margin: 30vh 40vw;
+    padding: 2rem;
+}
