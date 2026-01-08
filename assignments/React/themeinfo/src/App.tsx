@@ -6,7 +6,6 @@ import {
   Button,
   Stack,
 } from "@mui/material";
-
 export default function App() {
   return (
     <Box
