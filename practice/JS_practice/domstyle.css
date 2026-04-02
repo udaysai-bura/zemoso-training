@@ -1,0 +1,9 @@
+.active {
+  background-color: rgb(130, 216, 231);
+  padding: 10px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+p {
+  font-size: 18px;
+  color: darkblue;
+}

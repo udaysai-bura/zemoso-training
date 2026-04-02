@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DOM Practice</title>
+  <link rel="stylesheet" href="domstyle.css">
+</head>
+<body>
+  <h2 id="title">Hello DOM</h2>
+  <button id="toggleBtn">Toggle</button>
+  <button id="changeBtn">Change Text</button>
+  <p id="text">This is the original text.</p>
+  <script>
+    const toggleBtn = document.getElementById("toggleBtn");
+    const title = document.getElementById("title");
+    toggleBtn.addEventListener("click", () => {
+      title.classList.toggle("active");
+    });
+    const changeBtn = document.getElementById("changeBtn");
+    const text = document.getElementById("text");
+
+    changeBtn.addEventListener("click", () => {
+      text.textContent = "Text changed using JavaScript!";
+    });
+  </script>
+
+</body>
+</html>
